@@ -1,0 +1,159 @@
+<template>
+  <div class="home">
+    <!-- 封面 -->
+    <div class="Header">
+      <ms-header-top msg="@/components/HeaderTop.vue"></ms-header-top>
+    </div>
+    <!-- 之后 -->
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+    <div>123</div>
+  </div>
+</template>
+
+<script>
+import HeaderTop from "@/components/HeaderTop.vue";
+
+export default {
+  name: "home",
+  components: {
+    msHeaderTop: HeaderTop,
+  },
+};
+</script>
+
+<style lang="less">
+</style>
