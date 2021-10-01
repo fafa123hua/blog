@@ -8,9 +8,8 @@
       <source src="../assets/mp4/123.mp4" />
        用记得加上object-fit: fill; 
     </video> -->
+    <!-- 简介 -->
     <div class="headerTop__intro">
-      <!-- 头像 -->
-      <div class="headerTop__intro__headPortrait"></div>
       <!-- 名字 -->
       <div class="headerTop__intro__name"></div>
       <!-- b文 -->
@@ -70,10 +69,21 @@
   &__intro {
     position: absolute;
     width: 70vw;
-    height: 50vh;
+    height: 40vh;
     left: 15vw;
-    top: 25vh;
+    top: 30vh;
     z-index: 99;
+    background-color: pink;
+    // 名字
+    &__name {
+      width: 100%;
+      height: 50%;
+    }
+    // b文
+    &__text {
+      width: 100%;
+      height: 20%;
+    }
     // 外部链接
     &__link {
       width: 100%;
@@ -82,6 +92,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: black;
       ul {
         position: relative;
         width: 50%;

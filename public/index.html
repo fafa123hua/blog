@@ -9,8 +9,19 @@
       href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css"
       rel="stylesheet"
     />
+    <!-- 切换页面更改标签 -->
+    <script>
+      document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState == 'hidden') {
+          normal_title = document.title
+          document.title = '|ω・）盯...'
+        } else {
+          document.title = '(*´∇｀*)你终于回来啦~'
+        }
+      })
+    </script>
     <title>
-      <%= htmlWebpackPlugin.options.title %>
+      Elbert’s Blog
     </title>
   </head>
 
