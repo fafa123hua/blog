@@ -11,7 +11,7 @@
     <!-- 简介 -->
     <div class="headerTop__intro">
       <!-- 名字 -->
-      <div class="headerTop__intro__name"></div>
+      <div class="headerTop__intro__name">Elbert</div>
       <!-- b文 -->
       <div class="headerTop__intro__text"></div>
       <!-- 链接 -->
@@ -45,7 +45,9 @@
     </div>
   </div>
 </template>
+<script>
 
+</script>
 <style lang="less">
 .headerTop {
   position: relative;
@@ -68,34 +70,41 @@
   //个人简介
   &__intro {
     position: absolute;
-    width: 70vw;
-    height: 40vh;
-    left: 15vw;
-    top: 30vh;
+    width: 50vw;
+    height: 35vh;
+    left: 25vw;
+    top: 32.5vh;
     z-index: 99;
-    background-color: pink;
     // 名字
     &__name {
       width: 100%;
       height: 50%;
+      text-align: center;
+      font-size: 12vw;
+      color: rgba(255, 255, 255, 0);
+      -webkit-text-stroke: black 0.5px;
+      background: url('../assets/img/headerTop-background.png');
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      cursor: default;
     }
     // b文
     &__text {
       width: 100%;
-      height: 20%;
+      height: 30%;
     }
     // 外部链接
     &__link {
       width: 100%;
-      height: 30%;
+      height: 20%;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: black;
       ul {
         position: relative;
-        width: 50%;
+        width: 60%;
         height: 100%;
         margin: 0;
         padding: 0;
@@ -118,7 +127,7 @@
             align-items: center;
             color: #fff;
             text-decoration: none;
-            font-size: 2vw;
+            font-size: 1.5vw;
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-right: 1px solid rgba(255, 255, 255, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
