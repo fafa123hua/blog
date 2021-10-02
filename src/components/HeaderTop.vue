@@ -11,9 +11,31 @@
     <!-- 简介 -->
     <div class="headerTop__intro">
       <!-- 名字 -->
-      <div class="headerTop__intro__name">Elbert</div>
+      <div class="headerTop__intro__name">
+        <p>Elbert</p>
+      </div>
       <!-- b文 -->
-      <div class="headerTop__intro__text"></div>
+      <vue-typed-js
+        class="headerTop__intro__text"
+        :strings="[
+          '一个人至少拥有一个梦想^400,有一个理由去坚强。',
+          '心若没有栖息的地方^400,到哪里都是在流浪。',
+          '在这个世界上^300,不是所有合理的和美好的都能按照自己的愿望存在或实现。',
+          '盛年不重来,一日难再晨。^500及时当勉励,岁月不待人',
+        ]"
+        :typeSpeed="180"
+        :fadeOutClass="'fadeOutClass'"
+        :loop="true"
+        :startDelay="100"
+        :backSpeed="100"
+        :backDelay="400"
+        :showCursor="false"
+        :contentType="'html'"
+      >
+        <p class="typing"></p>
+      </vue-typed-js>
+      <!-- b文 -->
+      <div class=""></div>
       <!-- 链接 -->
       <div class="headerTop__intro__link">
         <ul>
@@ -78,21 +100,36 @@
     // 名字
     &__name {
       width: 100%;
-      height: 50%;
-      text-align: center;
-      font-size: 12vw;
-      color: rgba(255, 255, 255, 0);
-      -webkit-text-stroke: black 0.5px;
-      background: url('../assets/img/headerTop-background.png');
-      background-size: cover;
-      background-clip: text;
-      -webkit-background-clip: text;
-      cursor: default;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 12vw;
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: black 0.5px;
+        background: url('../assets/img/headerTop-background.png');
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        cursor: default;
+      }
     }
     // b文
     &__text {
       width: 100%;
       height: 30%;
+      display: flex;
+      justify-content: center;
+      .typing {
+        margin: 0;
+        top: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 1.4vw;
+      }
     }
     // 外部链接
     &__link {
@@ -104,7 +141,7 @@
       align-items: center;
       ul {
         position: relative;
-        width: 60%;
+        width: 50%;
         height: 100%;
         margin: 0;
         padding: 0;
@@ -113,8 +150,8 @@
         align-items: center;
         li {
           position: relative;
-          width: 5vw;
-          height: 5vh;
+          width: 3.5vw;
+          height: 4.3vh;
           list-style: none;
           a {
             position: relative;
@@ -127,7 +164,7 @@
             align-items: center;
             color: #fff;
             text-decoration: none;
-            font-size: 1.5vw;
+            font-size: 1vw;
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-right: 1px solid rgba(255, 255, 255, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -138,7 +175,7 @@
           }
           // 动画效果
           a:hover {
-            transform: translateY(-2vh);
+            transform: translateY(-1.2vh);
           }
           a::before {
             content: '';
@@ -148,11 +185,11 @@
             width: 50px;
             height: 100%;
             background-color: rgba(255, 255, 255, 0.5);
-            transform: skew(45deg) translateX(15vw);
+            transform: skew(45deg) translateX(10vw);
             transition: all 0.8s ease 0s;
           }
           a:hover::before {
-            transform: skew(45deg) translateX(-15vw);
+            transform: skew(45deg) translateX(-10vw);
           }
         }
       }

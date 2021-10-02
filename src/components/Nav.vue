@@ -156,16 +156,37 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .header-nav-a {
+    &-a {
       font-size: 19px;
       font-weight: 600;
       line-height: 50px;
       color: #666;
       text-transform: uppercase;
       text-decoration: none;
+      transition: all 0.6s ease 0s;
       &.router-link-exact-active {
         color: rgba(254, 215, 26, 1);
       }
+    }
+    // a动画
+    &-a:hover {
+      color: rgba(254, 215, 26, 1);
+    }
+    &-a:hover:after {
+      opacity: 1;
+      transform: translate(-50%) scaleX(1);
+    }
+    &-a:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      width: 100%;
+      color: black;
+      opacity: 0;
+      border-bottom: 2px solid #646464;
+      transform: translate(-50%) scaleX(0);
+      transition: 0.2s ease-in-out;
     }
   }
 }
