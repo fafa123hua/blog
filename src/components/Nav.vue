@@ -54,7 +54,7 @@ export default {
 }
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 75px;
   background-color: #fff;
   box-shadow: 0 1px 40px -8px rgba(0, 0, 0, 50%);
@@ -157,13 +157,18 @@ export default {
     justify-content: space-around;
     align-items: center;
     &-a {
-      font-size: 19px;
+      height: 100%;
+      font-size: 1vw;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 1vw;
       color: #666;
       text-transform: uppercase;
       text-decoration: none;
       transition: all 0.6s ease 0s;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &.router-link-exact-active {
         color: rgba(254, 215, 26, 1);
       }
@@ -180,13 +185,13 @@ export default {
       content: '';
       position: absolute;
       left: 50%;
-      bottom: -2px;
+      top: 95%;
       width: 100%;
-      color: black;
+      color: rgba(254, 215, 26, 1);
       opacity: 0;
-      border-bottom: 2px solid #646464;
+      border-bottom: 4px solid rgba(254, 215, 26, 1);
       transform: translate(-50%) scaleX(0);
-      transition: 0.2s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
   }
 }
